@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+
+    .item {
+        @apply p-4 rounded-md shadow-md flex flex-col justify-center items-center gap-4;
+
+        h1 {
+            @apply text-2xl font-semibold text-slate-700;
+        }
+    }
+
+}
+
+.heading {
+    min-height: 400px;
+    width: 100%;
+    background: url('https://podacha-blud.com/uploads/posts/2022-10/1665577819_65-podacha-blud-com-p-fud-fotografii-fon-dlya-prezentatsii-67.jpg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    h1 {
+        color: #ffffff;
+        font-size: 50px;
+    }
+}
